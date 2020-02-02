@@ -4,6 +4,11 @@ public class Book {
 
     private long bookId;
     private String title;
+
+    public Genre getGenre() {
+        return genre;
+    }
+
     private Genre genre;
 
     public enum Genre {

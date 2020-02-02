@@ -14,7 +14,7 @@ public class BookFactory {
         return new Book(bookId, title, genre);
     }
 
-    public List getBooks() {
+    public List<Book> getBooks() {
         List<Book> books = new ArrayList<>();
         for (int i = 1; i <= 5; i++) {
             books.add(createBook(i, String.format("%s book %s", Genre.fantasy, i), Genre.fantasy));
